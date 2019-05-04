@@ -9,13 +9,13 @@
     curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
     sudo apt-get install -y nodejs
     ```
-    - For other distros: see [this](
-    (https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions))
+    - For other distros: see [this](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
 
 2. Clone this repository
 
     ```sh
-    git clone <repo_url>
+    # using --recursive to initialize the submodules
+    git clone --recursive <repo_url>
     ```
 
 3. In repo's directory:
