@@ -1,0 +1,3 @@
+[submodule "IP-project"]
+	path = IP-project
+	url = https://github.com/bishogasaad/IP-project
