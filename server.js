@@ -35,6 +35,18 @@ app.get('/test', (req, res, next) => {
     })
 })
 
+app.post('/echo', upload.single('car_image'), (req, res, next) => {
+    res.send('<pre>' + JSON.stringify({
+        headers: req.headers,
+        body: req.body,
+        file: req.file,
+        files: req.files,
+        xhr: req.xhr,
+        statusCode: req.statusCode,
+        statusMessage: req.statusMessage
+    }, null, 4) + '</pre>')
+})
+
 app.listen(process.env.PORT, () => {
     console.log('Server listening on port ' + process.env.PORT)
 })
