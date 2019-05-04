@@ -22,6 +22,19 @@ app.post('/upload', upload.single('car_image'), (req, res, next) => {
     })
 })
 
+app.get('/test', (req, res, next) => {
+    plateText('IP-project/car.JPG')
+    .then(car_plate => {
+        res.send({
+            car_plate: car_plate,
+            image_path: '<path goes here>'
+        })
+    })
+    .catch(err => {
+        res.send(err)
+    })
+})
+
 app.listen(process.env.PORT, () => {
     console.log('Server listening on port ' + process.env.PORT)
 })
