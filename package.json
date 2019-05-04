@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "NODE_ENV=production node server.js",
+    "start": "NODE_ENV=production TESSDATA_PREFIX=tessdata node server.js",
     "serve": "PORT=8000 nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
