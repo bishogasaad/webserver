@@ -13,12 +13,20 @@ function customLog(msg) {
     console.log('[' + new Date().toISOString() + '] Log: ' + msg)
 }
 
+function customError(msg) {
+    console.error('[' + new Date().toISOString() + '] Error: ' + msg)
+}
+
 app.post('/upload', upload.single('car_image'), (req, res, next) => {
+    if (!req.file) {
+        customError('Received request without image')
+        return res.sendStatus(400)
+    }
     customLog('received ' + req.file.originalname)
     plateText(req.file.path, 'json')
     .then(result => {
         customLog('finished processing ' + req.file.originalname)
-        plate = JSON.parse(result).plates[0]
+        plate = JSON.parse(result)[0].plates[0]
         res.send({
             plate: plate,
             image_path: 'images/' + req.file.filename
