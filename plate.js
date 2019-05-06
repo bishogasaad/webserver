@@ -1,9 +1,13 @@
 const util = require('util')
 const exec = util.promisify(require('child_process').exec)
 
-function plateText(image_path) {
+function plateText(image_path, output='') {
     return new Promise((resolve, reject) => {
-        exec('python3 IP-project/main.py --silent ' + image_path)
+        cmd = 'python3 IP-project/main.py --silent '
+        if (output == 'json') {
+            cmd += '--json '
+        }
+        exec(cmd + image_path)
         .then(({stdout, stderr}) => {
             resolve(stdout.trim())
         })

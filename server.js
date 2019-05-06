@@ -9,11 +9,18 @@ app.use('/images', express.static('uploads'))
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
+function customLog(msg) {
+    console.log('[' + new Date().toISOString() + '] Log: ' + msg)
+}
+
 app.post('/upload', upload.single('car_image'), (req, res, next) => {
-    plateText(req.file.path)
-    .then(car_plate => {
+    customLog('received ' + req.file.originalname)
+    plateText(req.file.path, 'json')
+    .then(result => {
+        customLog('finished processing ' + req.file.originalname)
+        plate = JSON.parse(result).plates[0]
         res.send({
-            car_plate: car_plate,
+            plate: plate,
             image_path: 'images/' + req.file.filename
         })
     })
