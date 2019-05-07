@@ -3,6 +3,10 @@
 ### Notes
 - You can find the deployed web app here: https://car-plate.herokuapp.com/
 - You can find a video demo here: https://www.youtube.com/watch?v=Lr0KWTwx-18
+- The project is split into 2 git repositories: \
+__(please open both of them when seeing the commits)__
+    1. [Web application](https://github.com/bishogasaad/webserver) (this repo)
+    2. [Image processing program](https://github.com/bishogasaad/IP-project) (which is included as a submodule in `/IP-project` in this repo)
 
 ## Project description
 
