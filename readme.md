@@ -1,6 +1,39 @@
-# Web application
+# Ifind (License Plate Detector)
+
+### Notes
+- You can find the deployed web app here: https://car-plate.herokuapp.com/
+- You can find a video demo here: https://www.youtube.com/watch?v=Lr0KWTwx-18
+
+## Project description
+
+Detect and extract car license plate from a camera image, to enable a user to search for a specific car using its license plate number (in a car garage for example)
+
+The project is split into 2 main parts:
+
+1. An image processing program to detect car license plate in an image, and extract its text.
+2. A web application that provides an interface to this program, where a user can upload multiple images of cars to the server, and the server returns the extracted text of each license plate, where the user can then search for a specific plate using the website
+
+## Implementation details
+
+Project runs on Ubuntu
+
+1. Image processing is written in python3 (using tesseract in the final step, for OCR of license plate characters)
+
+2. Web application:
+    1. Backend using Nodejs and express
+    2. Frontend using React
+
+## Team Members
+1. Bishoy George
+1. Bishoy Hany
+1. David Nader
+1. George Mohsen
+
+---
 
 ## Installation
+
+### Installing the web application
 
 1. Install nodejs 10.x
 
@@ -23,6 +56,12 @@
     ```sh
     npm install
     ```
+
+### Installing the image processing program
+
+Follow the steps in `IP-project` ([here](https://github.com/bishogasaad/IP-project/blob/master/readme.md))
+
+---
 
 ## Development
 To start the sever in development mode
