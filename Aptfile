@@ -3,9 +3,9 @@ libxrender1
 libfontconfig1
 libice6
 
-http://ppa.launchpad.net/alex-p/tesseract-ocr/ubuntu/pool/main/t/tesseract/libtesseract4_4.1.0~git3875-b2fc3eba-1ppa1~bionic1_amd64.deb
+http://ppa.launchpad.net/alex-p/tesseract-ocr/ubuntu/pool/main/t/tesseract/libtesseract4_4.1.0~git3883-c4bb4b93-1ppa1~bionic1_amd64.deb
 http://ppa.launchpad.net/alex-p/tesseract-ocr/ubuntu/pool/main/t/tesseract-lang/tesseract-ocr-osd_4.00~git30-7274cfa-1ppa1~bionic1_all.deb
 http://ppa.launchpad.net/alex-p/tesseract-ocr/ubuntu/pool/main/l/leptonlib/liblept5_1.78.0-1+nmu1ppa1~bionic1_amd64.deb
-http://ppa.launchpad.net/alex-p/tesseract-ocr/ubuntu/pool/main/t/tesseract/tesseract-ocr_4.1.0~git3875-b2fc3eba-1ppa1~bionic1_amd64.deb
+http://ppa.launchpad.net/alex-p/tesseract-ocr/ubuntu/pool/main/t/tesseract/tesseract-ocr_4.1.0~git3883-c4bb4b93-1ppa1~bionic1_amd64.deb
 libgif7
 http://ppa.launchpad.net/alex-p/tesseract-ocr/ubuntu/pool/main/o/openjpeg2/libopenjp2-7_2.3.0-1+nmu2ppa1~xenial1_amd64.deb
